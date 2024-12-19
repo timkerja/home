@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Temukan layanan ART, tukang, kebersihan, katering, dan berbagai jasa rumah tangga di Indonesia. Tim kerja berpengalaman siap membantu Anda." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      body {
+        font-family: "Inter", serif;
+      }
+
+      /* Fading animation */
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px); /* Start from below */
+        }
+        10% {
+          opacity: 1;
+          transform: translateY(0px); /* Start from below */
+        }
+        70% {
+          opacity: 1;
+          transform: translateY(0); /* Start from below */
+        }
+        80% {
+          opacity: 0;
+          transform: translateY(-20px); /* Move to original position */
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-20px); /* Move to original position */
+        }
+      }
+
+      /* Apply animation */
+      .fade-in-up {
+        animation: fadeInUp 4.5s ease-out;
+      }
+    </style>
+    <title>Tim Kerja - Jasa ART, Cleaning, hingga Tukang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan ART, Cleaning, hingga Tukang",
+        "areaServed": "Indonesia",
+        "provider": {
+          "@type": "Organization",
+          "name": "Tim Kerja",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Malang",
+            "addressCountry": "ID"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white top-0 z-50">
+      <div class="container mx-auto px-4 xl:px-0 lg:max-w-[1080px] py-6 flex items-center justify-between">
+        <a href="#" class="text-2xl font-extrabold text-blue-600">Tim Kerja</a>
+        <nav class="hidden lg:flex space-x-12">
+          <a href="#layanan" class="text-gray-800 text-lg font-medium hover:text-blue-600">Rumah tangga</a>
+          <a href="#layanan" class="text-gray-800 text-lg font-medium hover:text-blue-600">Instansi</a>
+          <a href="#layanan" class="text-gray-800 text-lg font-medium hover:text-blue-600">Perusahaan</a>
+        </nav>
+        <nav class="hidden lg:flex space-x-6">
+          <a href="#tentang-kami" class="text-gray-700 text-md hover:text-blue-600">Tentang kami</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <a href="#layanan" class="lg:hidden text-gray-800 text-lg font-medium hover:text-blue-600">Layanan</a>
+        <!-- <button class="lg:hidden text-gray-700 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            <a href="#layanan" class="text-gray-800 text-lg font-medium hover:text-blue-600">Perusahaan</a>
+          </svg>
+        </button> -->
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center bg-no-repeat h-screen" style="background-image: url('/asset/bg.jpg')">
+      <!-- Content -->
+      <div class="container mx-auto px-4 xl:px-0 lg:max-w-[1080px] pt-12 w-full h-full text-left text-white flex flex-col gap-4 items-start justify-center relative z-10">
+        <!-- Animated H2 -->
+        <h2 id="animated-text" class="text-4xl md:text-6xl font-bold"></h2>
+        <p class="text-4xl md:text-6xl font-bold">Kami dengan senang hati</p>
+        <p class="text-4xl md:text-6xl font-bold">akan membantu.</p>
+        <button class="text-xl md:text-2xl mt-12 px-8 py-4 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700" onclick="window.location.href='#layanan'">Lihat semua layanan</button>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-48 pb-20 lg:pt-48 xl:pt-56 xl:pb-28">
+      <div class="relative container mx-auto px-4 xl:px-0 lg:max-w-[1080px]">
+        <!-- iron svg -->
+        <div class="hidden lg:block absolute -left-2 -translate-y-12 pointer-events-none md:left-[5%]">
+          <svg class="fill-blue-500 h-24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve">
+            <g>
+              <g>
+                <g>
+                  <path
+                    d="M485,310.323c0.476-1.252,0.737-2.597,0.737-3.999c0-6.491-5.595-11.77-12.474-11.77c-0.176,0-0.395,0.008-0.648,0.021
+                  c-14.296-17.056-31.055-33.7-47.757-47.983c-0.013-0.012-0.026-0.023-0.04-0.033c0.829-2.716,1.066-5.601,0.624-8.497
+                  c-0.772-5.076-3.467-9.541-7.582-12.566l-23.743-17.483c-6.777-4.983-15.767-4.832-22.324-0.281
+                  c-9.66-5.962-19.327-11.347-28.868-16.041c-31.513-15.502-60.76-23.363-86.927-23.363H98.27v-23.9
+                  c0-20.451-16.639-37.091-37.091-37.091H20.796c-4.562,0-8.259,3.697-8.259,8.259c0,4.562,3.697,8.259,8.259,8.259H61.18
+                  c11.344,0,20.572,9.228,20.572,20.572v23.9H64.956C29.14,168.33,0,197.47,0,233.287v138.218c0,0.076,0.01,0.15,0.011,0.225H0
+                  v17.385c0,8.572,6.973,15.546,15.544,15.546h480.911c8.571,0,15.544-6.974,15.544-15.546v-17.61
+                  C512,354.208,501.193,332.421,485,310.323z M459.221,304.259c-7.402-1.383-15.535-6.537-21.112-12.785
+                  c-5.91-6.624-9.04-13.699-9.997-19.801C439.626,282.44,450.123,293.473,459.221,304.259z M16.518,233.287
+                  c0-26.709,21.728-48.438,48.438-48.438h191.043c44.195,0,102.623,27.275,156.607,73.024c-3.963,13.522,0.929,30.872,13.178,44.6
+                  c10.751,12.046,24.592,18.675,37.062,18.674c3.018,0,5.952-0.403,8.748-1.197c11.977,16.338,20.08,31.439,22.838,43.296H339.235
+                  c1.377-3.243,2.14-6.808,2.14-10.548c0-14.926-12.142-27.068-27.068-27.068H16.518V233.287z M16.518,342.148h297.788
+                  c5.817,0,10.55,4.733,10.55,10.55c0,5.816-4.733,10.548-10.55,10.548H16.518V342.148z M495.482,388.142H16.518v-8.378h478.963
+                  V388.142z"
+                  />
+                  <path
+                    d="M277.019,262.719c-6.551-15.122-35.966-57.956-84.398-57.956H88.107c-15.73,0-28.526,12.795-28.526,28.523v40.761
+                  c0,15.728,12.796,28.523,28.526,28.523h162.731c15.728,0,28.524-12.795,28.524-28.523c0-3.775-0.73-7.449-2.17-10.922
+                  C277.137,262.986,277.079,262.851,277.019,262.719z M259.816,281.993c-3.364-7.13-10.603-12.088-18.995-12.088h-33.395
+                  c-9.909,0-18.218,6.905-20.42,16.148H88.107c-6.622,0-12.008-5.386-12.008-12.005v-40.761c0-6.619,5.387-12.005,12.008-12.005
+                  h104.513c36.674,0,62.483,32.342,69.251,48.027c0.021,0.046,0.04,0.093,0.062,0.139c0.606,1.459,0.912,3.006,0.912,4.6
+                  C262.845,277.096,261.693,279.873,259.816,281.993z"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <!-- broom svg -->
+        <div class="hidden lg:block absolute -right-2 -top-32 pointer-events-none md:right-[4%]">
+          <svg class="fill-blue-500 h-40" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve">
+            <path d="m312.951,2.05c-2.733-2.731-7.165-2.732-9.9,0l-132.826,132.824c-2.661-1.336-5.511-2.049-8.468-2.049-7.14,0-13.186,3.962-16.813,7.048-3.48-0.997-7.107-1.501-10.828-1.501-19.045,0-38.755,13.193-58.068,27.796-0.002,0.001-0.003,0.002-0.005,0.004-3.023,2.285-6.036,4.604-9.035,6.913l-.975,.751c-31.116,23.949-62.928,47.934-63.247,48.174-1.618,1.22-2.628,3.081-2.769,5.102-0.141,2.021 0.601,4.005 2.033,5.438l80.4,80.4c1.317,1.316 3.101,2.05 4.95,2.05 0.162,0 0.325-0.006 0.488-0.017 2.021-0.142 3.882-1.152 5.102-2.771 0.239-0.317 24.222-32.129 48.175-63.248l.76-.986c19.943-25.901 40.528-52.636 33.207-77.93 2.977-3.502 6.767-9.254 7.027-16.062 0.124-3.229-0.584-6.333-2.032-9.215l132.824-132.821c2.733-2.734 2.733-7.166 0-9.9zm-170.333,221.813l-51.471-51.475c4.971-3.616 9.916-7.013 14.771-9.942l46.671,46.673c-2.917,4.807-6.312,9.731-9.971,14.744zm-12.546,16.563c-17.571,22.827-35.156,46.024-43.408,56.937l-9.466-9.466 23.992-27.241c2.556-2.901 2.274-7.325-0.626-9.88-2.902-2.556-7.326-2.274-9.88,0.626l-23.405,26.576-10.18-10.18 8.904-8.903c2.734-2.733 2.734-7.166 0.001-9.899-2.733-2.733-7.166-2.733-9.899-0.001l-8.905,8.904-10.178-10.178 26.573-23.406c2.901-2.556 3.182-6.979 0.626-9.88-2.556-2.902-6.979-3.182-9.88-0.626l-27.239,23.992-9.465-9.465c10.912-8.252 34.108-25.838 56.936-43.407l.976-.752c1.427-1.099 2.857-2.2 4.29-3.298l54.28,54.283c-1.089,1.42-2.186,2.845-3.286,4.274l-.761,.99zm32.46-77.439c-2.321,1.99-3.083,5.257-1.88,8.068 3.259,7.619 2.262,16.02-1.348,24.979l-40.293-40.295c5.258-2.125 10.325-3.368 15.104-3.368 3.505,0 6.721,0.646 9.83,1.977 2.814,1.202 6.079,0.441 8.068-1.881 1.515-1.768 6.071-5.643 9.743-5.643 0.938,0 2.403,0.22 4.301,2.117 1.963,1.962 2.145,3.496 2.113,4.479-0.129,3.896-4.236,8.341-5.638,9.567z" />
+          </svg>
+        </div>
+        <!-- washing svg -->
+        <div class="hidden lg:block absolute bottom-0 right-6 -translate-y-20 pointer-events-none md:right-[6%]">
+          <svg class="fill-blue-500 h-24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve">
+            <g>
+              <g>
+                <g>
+                  <path
+                    d="M442.656,0H69.347C46.589,0,28.074,18.515,28.074,41.273v429.453c0,22.758,18.515,41.273,41.272,41.273h373.309
+                    c22.756,0,41.27-18.515,41.27-41.273V41.273C483.926,18.515,465.412,0,442.656,0z M442.656,495.512H69.347
+                    c-10.777,0-19.963-6.916-23.369-16.541h420.046C462.618,488.595,453.431,495.512,442.656,495.512z M467.438,462.482H44.562
+                    V104.063h422.875V462.482z M197.828,66.645V38.57c0-2.692,2.274-4.967,4.967-4.967h106.408c2.692,0,4.967,2.274,4.967,4.967
+                    v28.074c0,2.693-2.274,4.968-4.967,4.968H202.795C200.102,71.612,197.828,69.338,197.828,66.645z M467.438,87.575H313.867
+                    c9.593-2.138,16.789-10.703,16.789-20.93V38.57c0-11.831-9.625-21.456-21.456-21.456H202.793
+                    c-11.831,0-21.456,9.625-21.456,21.456v28.074c0,10.227,7.198,18.792,16.789,20.93H44.562V41.273
+                    c0-13.667,11.117-24.785,24.784-24.785h373.309c13.666,0,24.782,11.119,24.782,24.785V87.575z"
+                  />
+                  <path
+                    d="M286.031,343.524c8.292,0,15.016-6.724,15.016-15.016c0-8.29-6.724-15.014-15.016-15.014
+                    c-8.29,0-15.014,6.724-15.014,15.014C271.017,336.799,277.741,343.524,286.031,343.524z"
+                  />
+                  <circle cx="206.459" cy="301.931" r="11.56" />
+                  <path
+                    d="M161.322,40.223c-6.838,0-12.384,5.544-12.384,12.385s5.546,12.386,12.384,12.386c6.844,0,12.389-5.546,12.389-12.386
+                    C173.71,45.767,168.164,40.223,161.322,40.223z"
+                  />
+                  <circle cx="390.588" cy="52.608" r="12.385" />
+                  <path
+                    d="M256.001,406.263c71.929,0,130.447-58.518,130.447-130.447c0-71.927-58.518-130.444-130.447-130.444
+                    c-63.911,0-117.23,46.202-128.322,106.96h-3.839v46.971h3.84C138.771,360.06,192.09,406.263,256.001,406.263z M256.001,161.86
+                    c62.837,0,113.958,51.12,113.958,113.956c0,62.837-51.121,113.958-113.958,113.958c-62.836,0-113.956-51.121-113.956-113.958
+                    C142.044,212.98,193.165,161.86,256.001,161.86z"
+                  />
+                  <path
+                    d="M256.001,383.143c59.18,0,107.327-48.147,107.327-107.327S315.18,168.489,256.001,168.489
+                    s-107.327,48.147-107.327,107.327S196.821,383.143,256.001,383.143z M256.001,184.978c39.95,0,73.932,25.933,86.063,61.84
+                    c-5.75,2.191-10.968,5.551-15.379,9.959c-5.225,5.228-12.209,8.107-19.671,8.107s-14.449-2.88-19.677-8.109
+                    c-17.279-17.279-45.393-17.278-62.674,0.001c-5.228,5.228-12.215,8.108-19.674,8.108c-7.46,0-14.449-2.88-19.679-8.111
+                    c-4.408-4.405-9.625-7.764-15.373-9.953C182.067,210.912,216.051,184.978,256.001,184.978z M166.07,263.1
+                    c2.799,1.332,5.361,3.115,7.582,5.335c8.343,8.342,19.472,12.938,31.337,12.938c11.864,0,22.992-4.596,31.333-12.938
+                    c10.853-10.85,28.508-10.849,39.356-0.001c8.341,8.343,19.469,12.939,31.337,12.939s22.995-4.596,31.328-12.936
+                    c2.223-2.221,4.787-4.004,7.588-5.337c0.585,4.157,0.908,8.399,0.908,12.716c0,50.088-40.749,90.838-90.838,90.838
+                    c-50.089,0-90.838-40.749-90.838-90.838C165.162,271.498,165.485,267.259,166.07,263.1z"
+                  />
+                  <circle cx="350.679" cy="52.608" r="12.385" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="relative">
+          <h1 class="text-blue-600 max-w-3xl mx-auto text-3xl font-bold text-center md:text-4xl lg:text-6xl">Serahkan kepada kami. Nikmati waktu berhargamu</h1>
+          <p class="mt-6 max-w-xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10">Kami menyediakan jasa asisten rumah tangga, cleaning service hingga tukang untuk kebutuhan rumah tangga dan industri — hemat tenaga, hemat waktu, buka lapangan pekerjaan.</p>
+          <div class="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
+            <a class="group relative inline-flex border border-blue-600 rounded focus:outline-none w-full sm:w-auto" href="https://wa.me/6285706659432?text=Permisi%20Tim%20Kerja,%20saya%20ingin%20bertanya" target="_blank">
+              <span class="w-full inline-flex items-center justify-center self-stretch rounded px-4 py-2 text-lg md:text-xl text-white text-center font-bold uppercase bg-blue-600 ring-1 ring-blue-600 ring-offset-1 ring-offset-blue-600 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"> Hubungi Kami </span>
+            </a>
+            <a class="group relative inline-flex border border-blue-600 rounded focus:outline-none w-full sm:w-auto" href="https://wa.me/6285706659432?text=Permisi%20Tim%20Kerja,%20berapa%20harga%20layanan%20(kebutuhan%20anda)" target="_blank">
+              <span class="w-full inline-flex items-center justify-center self-stretch rounded px-4 py-2 text-lg md:text-xl text-blue-600 text-center font-bold uppercase bg-white ring-1 ring-blue-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"> Tanya harga </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="relative overflow-hidden py-24">
+      <div class="container mx-auto px-4 flex flex-col gap-6 items-center xl:px-0 lg:max-w-[1080px]">
+        <h1 class="text-3xl md:text-5xl text-gray-900 max-w-3xl font-bold text-center">Temukan berbagai layanan kami</h1>
+        <!-- Search Input -->
+        <div class="w-full">
+          <input type="text" id="searchInput" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Cari layanan..." />
+        </div>
+
+        <!-- Grid Container -->
+        <div id="gridContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Items (di-generate dengan JavaScript) -->
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="mt-6 flex justify-center space-x-2"></div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-24">
+      <div class="container mx-auto px-4 xl:px-0 lg:max-w-[1080px]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Kami Hadir untuk Anda yang Sedang Mengalami Di Bawah Ini:</h2>
+        </div>
+        <div class="space-y-8">
+          <!-- Concern 1 -->
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">1. Rumah Tangga</h3>
+            <p class="text-gray-600">- Merasa pekerjaan rumah tangga terlalu banyak dan membebani Anda.</p>
+            <p class="text-gray-600">- Tidak cukup waktu untuk mencuci, menyapu, membersihkan rumah, atau menyetrika pakaian karena kesibukan sehari-hari.</p>
+          </div>
+          <!-- Concern 2 -->
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">2. Pemilik maupun penghuni rumah Kos dan Kontrakan</h3>
+            <p class="text-gray-600">- Butuh orang untuk bersih-bersih rumah atau kamar.</p>
+          </div>
+          <!-- Concern 3 -->
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">3. Rumah Bermasalah</h3>
+            <p class="text-gray-600">- Air atau listrik rumah Anda yang bermasalah.</p>
+            <p class="text-gray-600">- Cat dinding rumah memudar atau ingin ganti warna.</p>
+            <p class="text-gray-600">- Waktunya renovasi rumah.</p>
+          </div>
+          <!-- Concern 4 -->
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">4. Susah Cari Orang yang Bisa Dipercaya</h3>
+            <p class="text-gray-600">- Sulit mencari tenaga kerja berpengalaman yang cocok untuk membantu Anda.</p>
+            <p class="text-gray-600">- Pernah ditipu, dicuri, atau mengalami kejahatan lainnya.</p>
+          </div>
+          <!-- Concern 5 -->
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">5. Butuh Bantuan</h3>
+            <p class="text-gray-600">- Anda membutuhkan bantuan untuk membantu membereskan urusan sehari-hari yang gak ada habisnya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang-kami" class="bg-white py-24">
+      <div class="container mx-auto px-4 xl:px-0 lg:max-w-[1080px] flex flex-col lg:flex-row items-center lg:space-x-12">
+        <!-- Text Section -->
+        <div class="text-center lg:text-left lg:w-1/2">
+          <p class="bg-blue-600 w-fit p-2 text-sm md:text-md text-white rounded font-medium">Kami adalah Tim Kerja</p>
+          <h1 class="text-3xl font-bold text-gray-900 mt-2">Penyedia Beragam Jasa di Indonesia</h1>
+          <p class="text-lg text-gray-700 mt-4">Kami memiliki pekerja berpengalaman untuk kebutuhan rumah tangga hingga industri. Mulai dari mencuci, membersihkan, menyetrika, memasak, hingga pekerjaan renovasi bangunan. Layanan kami hadir untuk mempermudah hidup Anda!</p>
+          <!-- Kontak & Lokasi -->
+          <h2 class="text-3xl font-bold text-gray-900 mt-6">Hubungi Kami</h2>
+          <ul class="mt-4 space-y-4 text-lg text-gray-600 mt-4">
+            <li><strong>Alamat:</strong> Malang, Jawa Timur, Indonesia</li>
+            <li><strong>Telepon:</strong> <a href="tel:+6285706659432" class="text-blue-600 hover:underline">+62 857-0665-9432</a></li>
+            <li><strong>Jam Operasional:</strong> Setiap hari, 06.00 - 20.00 WIB</li>
+          </ul>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Home Services</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Asisten Rumah Tangga</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Rumah Bersih</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Apartemen Bersih</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Kost Bersih</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Tukang Cat</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Tukang Air</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Tukang Listrik</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Renovasi Rumah</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-lg shadow-md">Bangun Rumah</span>
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div class="mt-12 lg:mt-0 lg:w-1/2">
+          <div class="relative rounded-xl overflow-hidden shadow-lg">
+            <img src="asset/WhatsApp Image 2024-12-18 at 21.28.30.jpeg" alt="our team" class="object-cover w-full h-full" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tahapan" class="py-24 bg-gray-100">
+      <div class="container mx-auto px-4 xl:px-0 lg:max-w-[1080px]">
+        <!-- Judul -->
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Alur Pemesanan</h2>
+        <p class="text-center text-gray-800 mb-12 max-w-2xl mx-auto">Proses pemesanan layanan kami dirancang sederhana dan mudah dipahami. Ikuti langkah-langkah berikut untuk mendapatkan layanan terbaik.</p>
+
+        <!-- Timeline -->
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
+          <!-- Tahap 1 -->
+          <div class="relative flex flex-col items-center text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-blue-200 rounded-full mb-4">
+              <span class="text-blue-600 font-bold text-2xl">1</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Pilih Layanan</h3>
+            <p class="text-gray-800 max-w-xs">Telusuri berbagai layanan kami dan pilih yang sesuai dengan kebutuhan Anda.</p>
+          </div>
+
+          <!-- Tahap 2 -->
+          <div class="relative flex flex-col items-center text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-green-200 rounded-full mb-4">
+              <span class="text-green-600 font-bold text-2xl">2</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Pesan Layanan</h3>
+            <p class="text-gray-800 max-w-xs">Isi formulir pemesanan melalui whatsapp untuk menjadwalkan tim ke lokasi Anda.</p>
+          </div>
+
+          <!-- Tahap 3 -->
+          <div class="relative flex flex-col items-center text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-yellow-200 rounded-full mb-4">
+              <span class="text-yellow-600 font-bold text-2xl">3</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Proses Pengerjaan</h3>
+            <p class="text-gray-800 max-w-xs">Tim kami akan datang sesuai jadwal yang ditentukan untuk menyelesaikan pekerjaan Anda.</p>
+          </div>
+
+          <!-- Tahap 4 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-red-200 rounded-full mb-4">
+              <span class="text-red-600 font-bold text-2xl">4</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Pembayaran</h3>
+            <p class="text-gray-800 max-w-xs">Lakukan pembayaran dengan metode yang Anda pilih setelah pekerjaan selesai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-black py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Tim Kerja Indonesia</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    // Data Layanan
+    const services = [
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 08.00.13.jpeg",
+        nama_layanan: "Asisten rumah tangga (harian atau bulanan)",
+        deskripsi: "Jasa pembantu rumah tangga. Bisa pilih ART perempuan atau laki-laki",
+        call_to_action: "Pastikan pakaian keluarga selalu bersih dan segar setiap hari!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 19.31.49 (1).jpeg",
+        nama_layanan: "Mencuci pakaian",
+        deskripsi: "Membersihkan pakaian dengan tangan atau mesin cuci untuk menjaga kebersihan keluarga.",
+        call_to_action: "Pastikan pakaian keluarga selalu bersih dan segar setiap hari!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 08.00.14 (1).jpeg",
+        nama_layanan: "Membersihkan rumah",
+        deskripsi: "Menjaga kebersihan dan kerapian rumah agar nyaman untuk ditinggali.",
+        call_to_action: "Jadikan rumah Anda tempat yang nyaman dan menyenangkan!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.52.52.jpeg",
+        nama_layanan: "Membersihkan kamar mandi",
+        deskripsi: "Jasa membersihkan kamar mandi secara menyeluruh, menjadikan kamar mandi bersih, higienis, dan bebas noda membandel.",
+        call_to_action: "Jadikan rumah Anda tempat yang nyaman dan menyenangkan!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 19.31.49.jpeg",
+        nama_layanan: "Berbelanja kebutuhan rumah tangga",
+        deskripsi: "Membeli bahan makanan, perlengkapan rumah, atau kebutuhan lainnya.",
+        call_to_action: "Pastikan kebutuhan rumah selalu terpenuhi tepat waktu!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 19.31.48 (1).jpeg",
+        nama_layanan: "Menyetrika pakaian",
+        deskripsi: "Merapikan pakaian agar terlihat rapi dan siap digunakan.",
+        call_to_action: "Buat pakaian keluarga terlihat rapi dan profesional setiap saat!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 08.00.14.jpeg",
+        nama_layanan: "Merawat tanaman",
+        deskripsi: "Menjaga dan menyiram tanaman untuk memperindah dan menyegarkan lingkungan rumah.",
+        call_to_action: "Rawat tanaman Anda untuk suasana rumah yang asri dan hijau!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 19.31.48.jpeg",
+        nama_layanan: "Merawat hewan peliharaan",
+        deskripsi: "Menjaga dan merawat hewan peliharaan selama Anda tidak di rumah.",
+        call_to_action: "Rawat tanaman Anda untuk suasana rumah yang asri dan hijau!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 19.47.05.jpeg",
+        nama_layanan: "Mengasuh anak",
+        deskripsi: "Merawat dan mendampingi anak dalam aktivitas harian mereka.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.05.44.jpeg",
+        nama_layanan: "Merawat orang sakit",
+        deskripsi: "Merawat dan mendampingi orang sakit atau sedang masa pemulihan.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 19.31.47 (1).jpeg",
+        nama_layanan: "Mangasuh orang tua",
+        deskripsi: "Merawat dan mendampingi orang tua di rumah.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.05.43(1).jpeg",
+        nama_layanan: "Pijat refleksi",
+        deskripsi: "Pijat refleksi keluarga di rumah. Bisa pilih trapis perempuan atau laki-laki.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.05.43(1).jpeg",
+        nama_layanan: "Pijat pengobatan",
+        deskripsi: "Pijat pengobatan untuk keluarga di rumah. Bisa pilih trapis perempuan atau laki-laki.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.05.43.jpeg",
+        nama_layanan: "Spa keluarga",
+        deskripsi: "Spa keluarga di rumah. Bisa pilih trapis perempuan atau laki-laki.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.27.jpeg",
+        nama_layanan: "Potong rumput",
+        deskripsi: "Memotong rumput atau menghilangkan rumput di sekitar rumah Anda.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.27.jpeg",
+        nama_layanan: "Merapikan taman",
+        deskripsi: "Merapikan taman rumah Anda supaya lebih rapi dan indah.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.29.jpeg",
+        nama_layanan: "Cat rumah",
+        deskripsi: "Cat ulang rumah Anda supaya terlihat seperti baru lagi.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.29.jpeg",
+        nama_layanan: "Cat pagar",
+        deskripsi: "Cat ulang pagar rumah Anda supaya terlihat bersih.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.26.jpeg",
+        nama_layanan: "Ganti lampu",
+        deskripsi: "Kami bantu ganti lampu yang sudah mati.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.27 (1).jpeg",
+        nama_layanan: "Genteng bocor",
+        deskripsi: "Kami bantu mengatasi genteng yang bocor supaya keluarga lebih nyaman.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.27 (1).jpeg",
+        nama_layanan: "Renovasi rumah",
+        deskripsi: "Kami berpengalaman melayani renovasi rumah baik renovasi ringan maupun berat.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.27 (2).jpeg",
+        nama_layanan: "Membangun rumah",
+        deskripsi: "Kami berpengalaman membangun rumah dengan mengikuti desain yang diinginkan.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.27 (2).jpeg",
+        nama_layanan: "Membangun tempat usaha",
+        deskripsi: "Kami berpengalaman membangun tempat usaha dengan desain yang kekinian.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.28.jpeg",
+        nama_layanan: "Membersihkan masjid",
+        deskripsi: "Kami menyediakan jasa membersihkan masjid supaya jamaah lebih nyaman dalam beribadah.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+      {
+        url_gambar: "asset/WhatsApp Image 2024-12-18 at 20.42.28.jpeg",
+        nama_layanan: "Membersihkan mushola",
+        deskripsi: "Kami menyediakan jasa membersihkan mushola supaya jamaah lebih nyaman dalam beribadah.",
+        call_to_action: "Luangkan waktu berkualitas bersama anak untuk tumbuh kembang mereka!",
+      },
+    ];
+
+    // Konfigurasi Pagination
+    const itemsPerPage = 12;
+    let currentPage = 1;
+
+    // Fungsi Render Grid
+    function renderGrid(filteredServices = services) {
+      const gridContainer = document.getElementById("gridContainer");
+      gridContainer.innerHTML = ""; // Bersihkan kontainer
+
+      // Hitung data berdasarkan halaman
+      const start = (currentPage - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      const paginatedServices = filteredServices.slice(start, end);
+
+      // Generate elemen grid
+      paginatedServices.forEach((service) => {
+        const div = document.createElement("div");
+        div.className = "flex flex-col gap-2 shadow-lg border border-gray-200 border-opacity-60 overflow-hidden rounded-xl";
+
+        div.innerHTML = `
+        <div class="aspect-w-16 aspect-h-9">
+          <img src="${service.url_gambar}" alt="${service.nama_layanan}" class="w-full h-96 object-cover" loading="lazy">
+        </div>
+        <!-- Bagian Konten -->
+        <div class="h-full flex flex-col justify-between p-4">
+          <!-- Teks dan Deskripsi -->
+          <div class="flex flex-col">
+            <h3 class="text-xl font-bold text-gray-800">${service.nama_layanan}</h3>
+            <p class="text-sm text-gray-600">${service.deskripsi}</p>
+          </div>
+          <a class="items-center px-8 py-3 mt-4 font-medium rounded-xl text-white text-center bg-blue-600 hover:bg-blue-700 transition-colors" href="https://wa.me/6285706659432?text=Permisi%20Tim%20Kerja,%20saya%20tertarik%20dengan%20layanan%20*${service.nama_layanan.replace(/ /g, "%20")}*" target="_blank">
+            Saya butuh ini
+          </a>
+        </div>
+      `;
+        gridContainer.appendChild(div);
+      });
+
+      renderPagination(filteredServices.length);
+    }
+
+    // Fungsi Render Pagination
+    function renderPagination(totalItems) {
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = ""; // Bersihkan pagination
+
+      const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+      for (let i = 1; i <= totalPages; i++) {
+        const button = document.createElement("button");
+        button.className = `px-4 py-2 rounded-lg ${i === currentPage ? "bg-blue-500 text-white" : "bg-white text-gray-800"} hover:bg-blue-400 hover:text-white`;
+        button.textContent = i;
+
+        // Event Listener Pagination Button
+        button.addEventListener("click", () => {
+          currentPage = i;
+          const searchValue = document.getElementById("searchInput").value.toLowerCase();
+          const filteredServices = services.filter((service) => service.nama_layanan.toLowerCase().includes(searchValue));
+          renderGrid(filteredServices);
+        });
+
+        pagination.appendChild(button);
+      }
+    }
+
+    // Event Listener untuk Search
+    document.getElementById("searchInput").addEventListener("input", (e) => {
+      const searchValue = e.target.value.toLowerCase();
+      const filteredServices = services.filter((service) => service.nama_layanan.toLowerCase().includes(searchValue));
+      currentPage = 1; // Reset ke halaman pertama
+      renderGrid(filteredServices);
+    });
+
+    // Inisialisasi Grid
+    renderGrid();
+  </script>
+
+  <script>
+    // Array of texts to display
+    const texts = ["Lupakan bersih-bersih.", "Lupakan lantai kotor.", "Lupakan cucian menumpuk.", "Lupakan urusan cat rumah.", "Lupakan memperbaiki atap.", "Lupakan merapikan taman.", "Lupakan membersihkan rumput liar."];
+
+    // Select the target div
+    const animatedTextDiv = document.getElementById("animated-text");
+
+    let index = 0;
+
+    function displayText() {
+      // Set the text and reset animation
+      animatedTextDiv.textContent = texts[index];
+      animatedTextDiv.classList.remove("fade-in-up"); // Remove the class to reset animation
+      void animatedTextDiv.offsetWidth; // Trigger reflow to restart animation
+      animatedTextDiv.classList.add("fade-in-up"); // Add the animation class
+
+      // Increment index or reset to 0
+      index = (index + 1) % texts.length;
+
+      // Show the next text after 3 seconds
+      setTimeout(displayText, 4000);
+    }
+
+    // Start the animation
+    displayText();
+  </script>
+</html>
